@@ -1,5 +1,22 @@
+<!--
+  Simple example of adding a Direqt | Chat for Publishers "subscribe" intent to a web site.
+
+  When tapped, the subscribe element will redirect the user to their default
+  messaging (SMS) application with a pre-filled message.
+-->
+
 <html>
+  
+  <!-- 
+    The script is currently empty but may eventually be required for link pre-processing 
+  -->
   <script async src="http://chat.direqt.io/widget.js"></script>
-  <a href="http://chat.direqt.io/intent/subscribe?publication=629ad2f0565b3da7188bd028">Subscribe</a>
+  
+  <!-- 
+    This <a> tag can wrap e.g., a banner image. It should only be shown for users likely to
+    support RCS messaging from their current device, which currently means only Android devices
+    in the UK. 
+  -->
+  <a class="direqt-subscribe-intent" href="http://chat.direqt.io/intent/subscribe?publication=629ad2f0565b3da7188bd028">Subscribe</a>
 </html>
   
